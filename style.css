@@ -1,0 +1,127 @@
+:root{
+    --primaryColor: #0e6253;
+    --secondaryColor: #ffc107;
+    --whiteColor: #fff;
+    --blackColor: #222;
+    --softGreenColor: #d9f2ee;
+    --darkGreyColor: #a7a7a7;
+    --greyColor: #f5f5f5;
+}
+
+.sidebar{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.sidebar-menus{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-menus a ,.sidebar-logout a{    
+    padding: 5% 8%;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+.sidebar-menus a:hover,.sidebar-logout a:hover {
+    background-color: var(--secondaryColor);
+    border-radius: 50px;
+}
+.sidebar-menus a ion-icon,.sidebar-logout a ion-icon{
+    font-size: 20px;
+}
+.main{
+    width: 100%;
+    height: max-content;
+    min-height: 100;
+    padding: 2%;
+    background-color: var(--softGreenColor);
+    margin-left: 250px;
+}
+.main{
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    padding: 2%;
+    background-color: var(--softGreenColor);
+    margin-left: 250px;
+
+}
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'open Sans',sans-serif;
+    outline: none;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(pic/back.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+.menu-toggle{
+    display: none;
+}
+
+.search {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+
+
+}
+.search input {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+
+}
+.search-btn {
+    background-color: var(--primaryColor);
+    color: var(--blackColor);
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    cursor: pointer;
+    
+}
+ nav ul li a{
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    background-color: #ffc107;
+    text-decoration: none;background-size: cover;
+    border: none;
+
+}
